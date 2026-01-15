@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miliotizz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        @media (max-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12 max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Profile Section -->
+        <div class="lg:w-1/3 lg:sticky lg:top-12 h-fit">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center lg:text-left">
+                <img src="https://github.com/miliotiz.png" alt="Anish Subudhi" class="w-32 h-32 rounded-full mx-auto lg:mx-0 mb-6 border-4 border-[#768CFF]/10">
+                <h1 class="text-4xl font-bold mb-2 text-black">Anish Subudhi</h1>
+                <p class="text-[#768CFF] font-medium mb-4">Wallpaper | Widget | Icon creator | Engineer</p>
+                <p class="text-gray-600 leading-relaxed">
+                    Hi, my name is Anish. I am Wallpaper | Widget | Icon creator 🎨| Engineer | Passionate about mobile screen customization 📱 | I love Making stuff which are usefull for everyone!
+                </p>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="lg:w-2/3 space-y-12">
+            <!-- Social Handles -->
+            <section>
+                <h2 class="text-xl font-semibold mb-6 text-gray-400 uppercase tracking-wider">Social handles</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Telegram -->
+                    <a href="https://t.me/aboutmiliotizz" target="_blank" class="block bg-[#0088cc] p-8 rounded-3xl text-white card-hover relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-2">JOIN TELEGRAM</h3>
+                            <p class="text-white/80 mb-6 text-sm">Stay updated with latest news, exclusive content, and real-time support.</p>
+                            <span class="inline-block bg-white text-[#0088cc] px-6 py-2 rounded-full font-bold text-sm">JOIN NOW</span>
+                        </div>
+                        <svg class="absolute right-[-20px] top-[-20px] w-48 h-48 text-white/10 rotate-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.35-1.77 4.84-1.78.11 0 .35.03.5.16.12.1.16.23.18.33.02.11.02.24.01.37z"/></svg>
+                    </a>
+                    <!-- X -->
+                    <a href="https://x.com/miliotizz" target="_blank" class="block bg-black p-8 rounded-3xl text-white card-hover relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-2">FOLLOW ON X</h3>
+                            <p class="text-white/80 mb-6 text-sm">Get the latest updates, breaking news, and behind-the-scenes content.</p>
+                            <span class="inline-block bg-white text-black px-6 py-2 rounded-full font-bold text-sm">FOLLOW</span>
+                        </div>
+                        <svg class="absolute right-[-20px] top-[-20px] w-48 h-48 text-white/10 rotate-12" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <!-- Github -->
+                    <a href="https://github.com/miliotiz" target="_blank" class="block bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-8 rounded-3xl text-white card-hover relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-2">FOLLOW ON Github</h3>
+                            <p class="text-white/80 mb-6 text-sm">Stay connected with my latest Projects.</p>
+                            <span class="inline-block bg-white text-[#dc2743] px-6 py-2 rounded-full font-bold text-sm">FOLLOW NOW</span>
+                        </div>
+                       <svg class="absolute right-[-20px] top-[-20px] w-48 h-48 text-white/10 rotate-12"
+         fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .5C5.73.5.75 5.78.75 12.28c0 5.21 3.44 9.63 8.2 11.19.6.11.82-.27.82-.6 0-.3-.01-1.1-.02-2.16-3.34.75-4.04-1.67-4.04-1.67-.55-1.45-1.34-1.84-1.34-1.84-1.1-.78.08-.76.08-.76   1.22.09 1.86 1.3 1.86 1.3 1.08 1.92 2.83 1.37 3.52 1.05.11-.81.42-1.37.76-1.68-2.66-.31-5.47-1.38-5.47-6.13 0-1.35.46-2.45 1.23-3.31-.12-.31-.53-1.56.12-3.25 0 0 1.01-.33 3.3 1.26a11.2 11.2 0 0 1 6 0 c2.28-1.59 3.29-1.26 3.29-1.26.66 1.69.25 2.94.12 3.25.77.86 1.23 1.96 1.23 3.31 0 4.77-2.82 5.82-5.5 6.12.43.38.81 1.13.81 2.28 0 1.65-.01 2.98-.01 3.38 0 .33.22.72.83.6 4.75-1.56 8.18-5.98 8.18-11.19C23.25 5.78 18.27.5 12 .5z"/>
+                         </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Apps Section -->
+            <section>
+                <h2 class="text-xl font-semibold mb-6 text-gray-400 uppercase tracking-wider">Apps</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <a href="https://play.google.com/store/apps/details?id=wallzen.dd.walls" target="_blank" class="block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm card-hover">
+                        <img src="https://raw.githubusercontent.com/miliotiz/WallZen.github.io/refs/heads/main/wallzen.png" alt="wallzen" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-bold">wallzen</h3>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">Android</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">An AI generated wallpaper app with various categories making ur phone perfect.</p>
+                        </div>
+                    </a>
+                    <!-- Project 2 -->
+                    <a href="https://play.google.com/store/apps/details?id=misty.dd.kwgt" target="_blank" class="block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm card-hover">
+                        <img src="https://raw.githubusercontent.com/miliotiz/AI-Calculator-/refs/heads/main/Misty.png?token=GHSAT0AAAAAADQXSPSXW7OP4CBUZ5SDTQNE2LI7NYQ" alt="Misty KWGT" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-bold">Misty KWGT</h3>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">Android</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">Experience the elegance of translucent widgets on your Android device.</p>
+                        </div>
+                    </a>
+                    <!-- Project 3 -->
+                    <a href="https://play.google.com/store/apps/details?id=com.the1uxdarkfluffy" target="_blank" class="block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm card-hover">
+                        <img src="https://raw.githubusercontent.com/miliotiz/AI-Calculator-/refs/heads/main/dark_fluffy.png?token=GHSAT0AAAAAADQXSPSWI4T2FUDDCRN7TPXS2LI7OGQ" alt="Dark Fluffy Icons" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-bold">Dark Fluffy Icons</h3>
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">Android</span>
+                            </div>
+                            <p class="text-gray-500 text-sm">Dark Fluffy icons which looks fantastic on ur device .</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
